@@ -13,17 +13,20 @@
 </header>
     <div class="container">
         <h1>Login</h1>
-         <form id="loginForm">
+        
+        <form id="loginForm">
             <label for="email">Email:</label><br>
             <input type="text" id="email" name="email" required><br>
             <!-- No need for password input in the frontend -->
             <input type="submit" value="Login">
         </form>
     </div>
+
     <script>
         document.getElementById("loginForm").addEventListener("submit", function(event) {
             event.preventDefault(); // Prevent the form from submitting in the traditional way
             const email = document.getElementById('email').value; // Get the email value
+
             const url = "http://localhost:8080/login";
             fetch(url, {
                 method: "POST",
@@ -73,15 +76,18 @@ func main() {
             c.JSON(http.StatusBadRequest, gin.H{"error": err.Error()})
             return
         }
-       // Check if the email exists in the database and get the role
+
+        // Check if the email exists in the database and get the role
         role := getUserRole(requestBody.Email)
         if role == "" {
             c.JSON(http.StatusUnauthorized, gin.H{"message": "Invalid email"})
             return
         }
+
         // Send the role back to the frontend
         c.JSON(http.StatusOK, gin.H{"role": role})
     })
+
     router.Run(":8080")
 }
 
@@ -124,11 +130,14 @@ func getUserRole(email string) string {
             <input type="submit" value="Submit">
         </form>
     </div>
+
     <script>
         document.getElementById("bookForm").addEventListener("submit", function(event) {
             event.preventDefault(); // Prevent the default form submission
+
             // Get form data
             const formData = new FormData(this);
+
             // Send form data to backend using Fetch API
             fetch("http://localhost:8080/createbook", {
                 method: "POST",
@@ -194,6 +203,7 @@ func getUserRole(email string) string {
         .form-group {
             text-align: center;
         }
+        
         .form-group input[type="submit"] {
             background-color: #4CAF50;
             color: #fff;
@@ -202,6 +212,7 @@ func getUserRole(email string) string {
             width: 50%;
             display: inline-block; /* Ensure the button respects the width */
         }
+        
         .form-group input[type="submit"]:hover {
             background-color: #3e8e41;
         }
@@ -230,11 +241,14 @@ func getUserRole(email string) string {
             <input type="submit" value="Submit">
         </form>
     </div>
+
     <script>
         document.getElementById("bookForm").addEventListener("submit", function(event) {
             event.preventDefault(); // Prevent the default form submission
+
             // Get form data
             const formData = new FormData(this);
+
             // Send form data to backend using Fetch API
             fetch("http://localhost:8080/createbook", {
                 method: "POST",
@@ -297,12 +311,14 @@ func getUserRole(email string) string {
             border-radius: 5px;
             border: 1px solid #ddd;
             width: 97%;
+
         }
         .form-group {
             display: flex;
             flex-direction: column;
             align-items: center; /* Center the form vertically */
-        }      
+        }
+        
         .form-group input[type="submit"] {
             background-color: #4CAF50;
             color: #fff;
@@ -310,8 +326,10 @@ func getUserRole(email string) string {
             margin-top: 30px;
             width: 60%;
         }
+        
         .form-group input[type="submit"]:hover {
-            background-color: #45c84a;      
+            background-color: #45c84a;
+                 
         }
     </style>
 </head>
@@ -324,11 +342,14 @@ func getUserRole(email string) string {
             <input type="submit" value="Submit">
         </form>
     </div>
+
     <script>
         document.getElementById("updateBookForm").addEventListener("submit", function(event) {
-            event.preventDefault(); // Prevent the default form submission            
+            event.preventDefault(); // Prevent the default form submission
+            
             const isbn = document.getElementById("isbn").value; // Get the value of the ISBN input field
-                        // Send a POST request to the backend API endpoint
+            
+            // Send a POST request to the backend API endpoint
             fetch("http://localhost:8080/updatebook", {
                 method: "POST",
                 headers: {
