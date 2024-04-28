@@ -1,0 +1,38 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Book</title>
+    <link rel="stylesheet" href="/static/astyle.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Add Book</h1>
+        <div class="form">
+            <label for="isbn">ISBN:</label>
+            <input type="text" id="isbn" placeholder="Enter ISBN">
+            <label for="lib_id">LibID:</label>
+            <input type="number" id="lib_id" placeholder="Enter LibID">
+            <label for="title">Title:</label>
+            <input type="text" id="title" placeholder="Enter Title">
+            <label for="authors">Authors:</label>
+            <input type="text" id="authors" placeholder="Enter Authors">
+            <label for="publisher">Publisher:</label>
+            <input type="text" id="publisher" placeholder="Enter Publisher">
+            <label for="version">Version:</label>
+            <input type="number" id="version" placeholder="Enter Version">
+            <label for="total_copies">TotalCopies:</label>
+            <input type="number" id="total_copies" placeholder="Enter TotalCopies">
+            <label for="available_copies">AvailableCopies:</label>
+            <input type="number" id="available_copies" placeholder="Enter AvailableCopies">
+            <label for="email">Admin Email:</label>
+            <input type="email" id="email" placeholder="Enter Admin Email">
+            <button onclick="addBook()">Add Book</button>
+        </div>
+        <div id="message"></div>
+    </div>
+    <script src="/static/ascript.js"></script>
+</body>
+</html>
