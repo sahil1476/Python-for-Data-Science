@@ -1,0 +1,65 @@
+.mainissue-div {
+  /* background-image: url("IssueReques.jpg"); */
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* height: 950px; */
+}
+
+.mainissue-div ul {
+  margin-left: 40%;
+  color: black;
+  margin-top: 10%;
+}
+.mainissue-div li {
+  margin-top: 2%;
+}
+.mainissue-div h2 {
+  color: black;
+}
+
+
+/* update */
+
+
+.book-list-container {
+  display: flex;
+  justify-content: center; 
+  /* align-items: center; Center vertically */
+  height: 100vh; /* Full viewport height */
+}
+
+.book-list {
+  display: flex;
+  justify-content: center; /* Center book items horizontally */
+  flex-wrap: wrap; /* Allow items to wrap to next line if needed */
+}
+
+.book-item {
+  width: 200px; /* Set width for each book item */
+  padding: 20px;
+  margin: 10px;
+  background-color: white; /* Light blue background color */
+  border-radius: 5px;
+  text-align: center;
+}
+
+.book-image {
+  width: 150px; /* Image width */
+  height: 150px; /* Image height */
+  object-fit: cover; /* Maintain aspect ratio and cover the container */
+  border-radius: 5px; /* Rounded corners for image */
+  margin-bottom: 10px; /* Bottom margin for spacing */
+}
+
+.book-content {
+  text-align: center;
+}
+
+.title {
+  font-weight: bold;
+}
+
+.isbn {
+  color: #666;
+  font-size: 0.9em;
+}

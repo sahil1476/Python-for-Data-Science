@@ -1,0 +1,25 @@
+  
+  .navbar {
+    background-color:#caece6; /* Blue background color */
+    color: black; /* White text color */
+    padding: 10px 20px;
+    /* display: flex; */
+    /* justify-content: center;
+    align-items: center; */
+    display: flex;
+    border-radius: 10px; /* Add border radius for curvy edges */
+    position: sticky;
+    top: 0;
+    
+    
+
+  }
+  
+  .navbar-title {
+    margin-left: 200px;
+    margin-top: 15px;
+    font-size: 114px; /* Increase the font size */
+    font-weight: bold;
+    font-family: cursive; /* Set font family to cursive */
+  }
+

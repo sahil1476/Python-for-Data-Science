@@ -1,0 +1,51 @@
+.remove-div {
+  /* background-image: url("RemoveBook.jpg"); */
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* height: 960px; */
+  text-align: center;
+  padding-top: 100px;
+  margin-bottom: 40px;
+}
+
+.remove-div button {
+  /* padding-top: 2px;
+   */
+   margin-top: 20px;
+  /* color: red; */
+  /* background-color: #9898ee; */
+  background-color: #007bff;
+}
+.remove-div button:hover {
+  /* background-color: #06435b;
+   */
+   background-color: #0056b3;
+  /* font-size: large; */
+}
+
+.message-div {
+  font-size: large;
+  color: aqua;
+}
+.message-div {
+  font-size: large;
+  color: red;
+}
+
+
+.remove-div h2 {
+  color: black;
+  font-weight: 1000;
+  font-size: 40px;
+  font-family: cursive;
+}
+.remove-div h1 {
+  color: red;
+  font-weight: bold;
+}
+.ash {
+  margin-left: 40%;
+  width: 30%;
+  /* border: 2px solid black; */
+  /* background-color: lightblue; */
+}

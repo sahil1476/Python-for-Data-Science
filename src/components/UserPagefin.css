@@ -1,0 +1,68 @@
+
+.image {
+    background: #34495e;
+    border: 1px solid #34495e;
+    width: 10%;
+    height: 12%;
+    border: none;
+  }
+  
+  .image-contain {
+    object-fit: contain;
+    object-position: center;
+  }
+  
+  .image-cover {
+    /* object-fit: cover; */
+    object-position: right top;
+  }
+  
+  
+  
+  navbar-divider-container {
+      position: absolute;
+      top: 50%; /* Position at vertical center */
+      left: 50%; /* Position at horizontal center */
+      transform: translate(-50%, -50%); /* Adjust to center the container */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    
+    .navbar-divider {
+      height: 300px;
+      width: 300px;
+      background-color: #ecf5f2; /* White background color */
+      margin: 0 30px; /* Add margin for spacing between divs */
+    }
+  
+  .properties2 {
+      margin-top: 20px;
+      padding-top: 20px;
+      padding-left: 437px;
+      /* background-color: red; */
+      display: flex;
+  }
+  
+  .adminimage2{
+  
+      background: #34495e;
+    border: 1px solid #34495e;
+    width: 100%;
+    height: 70%;
+    border: none;
+  }
+  
+  .buttonstyle{
+      /* margin-top: 20px; */
+      background-color:#4db6ad;
+      color: #d30e0e;
+      border:none;
+      
+      height: 28%;
+      width: 100%;
+      font-size: 30px; /* Increase the font size */
+      font-weight: bold;
+      font-family: cursive; /* Set font family to cursive */
+      
+  }
