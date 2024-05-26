@@ -30,6 +30,8 @@ Contributions are welcome! If you have any ideas for improvements or additional 
 
 ### Credits:
 
-Pandas
-Matplotlib
-Seaborn
+   1. Pandas
+   2. Matplotlib
+   3. Seaborn
+
+   
